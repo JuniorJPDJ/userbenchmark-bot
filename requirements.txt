@@ -1,2 +1,4 @@
 telethon[cryptg]
 pyyaml
+aiohttp[speedups]
+bs4

@@ -5,7 +5,7 @@ telethon_settings:
   # you can add (or remove) any of settings from here:
   # https://docs.telethon.dev/en/latest/modules/client.html#telethon.client.telegrambaseclient.TelegramBaseClient
   # any not filled value will take default value from @up
-  session: bot
+  session: arkbot
   auto_reconnect: true
   retry_delay: 15
   connection_retries: -1
