@@ -1,5 +1,4 @@
 telethon[cryptg]
-cryptg==0.2.post4
 pyyaml
 aiohttp[speedups]
 bs4

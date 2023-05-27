@@ -8,6 +8,9 @@ from telethon.tl.custom import InlineBuilder
 from telethon.tl.types import InputWebDocument
 import yaml
 
+def env_constructor(loader, node):
+    return os.environ.get(loader.construct_scalar(node), None)
+
 async def main(config):
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=config['log_level'])
     # logger = logging.getLogger(__name__)
@@ -65,6 +68,7 @@ async def main(config):
 
 
 if __name__ == '__main__':
+    yaml.SafeLoader.add_constructor("!env", env_constructor)
     with open("config.yml", 'r') as f:
         config = yaml.safe_load(f)
     asyncio.get_event_loop().run_until_complete(main(config))
