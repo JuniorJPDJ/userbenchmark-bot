@@ -1,5 +1,5 @@
 beautifulsoup4==4.13.4
 telethon==1.40.0
 cryptg==0.5.0.post0
-aiohttp[speedups]==3.12.12
+aiohttp[speedups]==3.12.13
 pyyaml==6.0.2
