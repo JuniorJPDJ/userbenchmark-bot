@@ -1,4 +1,4 @@
-beautifulsoup4==4.14.2
+beautifulsoup4==4.14.3
 telethon==1.42.0
 cryptg==0.5.2
 aiohttp[speedups]==3.13.2
